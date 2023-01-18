@@ -16,7 +16,7 @@ Grey part
 
 # MongoDB SparkConnector Demo
 
-__Demo of data science using MongoDB spark connector and Databricks spark community version__
+Demo of data science using MongoDB spark connector and Databricks spark community version__
 
 
 ## Description
