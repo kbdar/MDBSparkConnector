@@ -38,9 +38,13 @@ __2. Create and Configure Spark cluster on Databricks__
 * Once you are on the signup screen and you have entered your details, make sure to click on the "Use Community" link to be able to use the free community version of databricks(see creen shot).
 
 <table><tr><td><img src='/images/dbricks0.png' alt=“” height="400"></td></tr></table>
+* Once you have created the account, check for the email in your inbox to activate your account and login at https://community.cloud.databricks.com. Then goto compute section in the menu and create a new cluster.The cluster should take a few minutes to be ready.
+<table><tr><td><img src='/images/createcluster.png' alt=“” height="400"></td></tr></table>
+
+
+
 
 * Copy and paste the below code in your Jupyter notebook
-  ```bash
- code here
+  ``` code here
   ```
 __3. Load Data Into A Collection In The Atlas Cluster__
