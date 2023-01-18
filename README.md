@@ -1,6 +1,6 @@
 
 Demo of data science using MongoDB spark connector and Databricks spark community version
-<table><tr><td><img src='/images/createcluster.png' alt=“dashboard” height=“400”></td></tr></table>
+<table><tr><td><img src='/images/createcluster.png' alt="dashboard" height="400"></td></tr></table>
 
 ## Test
 With the connector, you have access to all Spark libraries for use with MongoDB datasets: Datasets for analysis with SQL (benefiting from automatic schema inference), streaming, machine learning, and graph APIs. You can also use the connector with the Spark Shell.
@@ -41,10 +41,13 @@ __1. Configure Atlas Environment__
 * Create an __M10__ based 3 node replica-set in a single cloud provider region of your choice with default settings
 * In the Atlas console, for the database cluster you deployed, click the __Connect button__, select __Connect Your Application__, and for the __latest Node.js version__ copy the __Connection String Only__ - make a note of this MongoDB URL address to be used in the next step
 
-__2. Configure Laptop__
-* Ensure MongoDB version 3.6+ is installed on your laptop in order to access the MongoDB command line tools (a MongoDB Atlas cluster will be used to actually host the data)
-* [Download](https://www.mongodb.com/download-center/compass) and install Compass on your laptop
-* Ensure Node (version 6+) and NPM are installed your laptop
+__2. Create and Configure Spark cluster on Databricks__
+* Goto https://community.cloud.databricks.com
+* At the login screen click on Sign Up if you do not have a databricks communnity account yet
+* Once you are on the signup screen and you have entered your details, make sure to click on the "Use Community" link to be able to use the free community version of databricks(see creen shot).
+
+<table><tr><td><img src='/images/dbricks0.png' alt=“” height="200" width="100"></td></tr></table>
+
 * Download and install the [mgeneratejs](https://www.npmjs.com/package/mgeneratejs) JSON generator tool on your laptop
   ```bash
   npm install -g mgeneratejs
