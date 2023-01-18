@@ -44,7 +44,7 @@ __2. Create a cluster on Databricks__
 
 * Once you have created the account, check for the email in your inbox to activate your account and login at https://community.cloud.databricks.com. Then goto compute section in the menu and create a new cluster. Use the default parameters and just chose a name for your cluster. The cluster should take a few minutes to be ready.
 
-__2. Install MongoDB connector for Spark on the databricks cluster__
+__3. Install MongoDB connector for Spark on the databricks cluster__
 * Once the cluster is ready, go to the "Libraries" tab and click on "Install new" a pop-up will appear.
 * In the "Library Source" select "Maven" and then click on "Search Packages"
 * In the list of packages, search for mongodb.
@@ -53,9 +53,19 @@ __2. Install MongoDB connector for Spark on the databricks cluster__
 
 You are now ready to connect your databricks spark to your MongoDB Atlas database cluster.
 
+## Execution
+Apache spark allows you to work with a few different programming languages including Python,Java, Scala and R. For the purpose of our demo we will use Python.
 
+__1. Create a Python Jupyter Notebook__
+Apache spark allows you to work with a few different programming languages including Python,Java, Scala and R. For the purpose of our demo we will use Python.
+* Go to the databricks workspace home and click on "Creat Notebook"
+<table><tr><td><img src='/images/createcluster.png' alt=“” height="400" width="90%"></td></tr></table>
+* Chose your cluster and then select "Python" as the default language, click Create. 
 
-* Copy and paste the below code in your Jupyter notebook
-  ``` code here
+Copy and paste the below code in your Jupyter notebook
+  ``` 
+db = "ML"
+coll = "e-commerce"
+resultDF = spark.read.format("mongo").option("database", db).option("collection", coll).option("partitioner", "MongoSinglePartitioner").load()
   ```
 __3. Load Data Into A Collection In The Atlas Cluster__
