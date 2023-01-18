@@ -1,16 +1,3 @@
-
-Demo of data science using MongoDB spark connector and Databricks spark community version
-<table><tr><td><img src='/images/createcluster.png' alt="dashboard" height="400"></td></tr></table>
-
-## Test
-With the connector, you have access to all Spark libraries for use with MongoDB datasets: Datasets for analysis with SQL (benefiting from automatic schema inference), streaming, machine learning, and graph APIs. You can also use the connector with the Spark Shell.
-
-### --> H2
-Clone this Repositorie to your local machine
-```
-Grey part
-```
-
 # MongoDB SparkConnector Demo
 
 __Demo of data science using MongoDB spark connector and Databricks spark community version__
@@ -19,6 +6,10 @@ __Demo of data science using MongoDB spark connector and Databricks spark commun
 ## Apache Spark
 
 Apache Spark is a data processing framework that can quickly perform processing tasks on very large data sets, and can also distribute data processing tasks across multiple computers, either on its own or in tandem with other distributed computing tools. Spark was released as an Apache open source project in 2014.
+
+# MongoDB connector for Apache Spark
+
+The MongoDB Connector for Spark provides integration between MongoDB and Apache Spark. With this connector, you can access all Spark libraries for use with MongoDB datasets: Datasets for analysis with SQL (benefiting from automatic schema inference), streaming, machine learning, and graph APIs. 
 
 This proof shows how you can connect MongoDB Atlas database to Apache spark and perform queries and do a few calculations on your data that a data scientist may require. I will add an example of machine learning algorithm later on:
 
