@@ -46,7 +46,7 @@ __2. Create and Configure Spark cluster on Databricks__
 * At the login screen click on Sign Up if you do not have a databricks communnity account yet
 * Once you are on the signup screen and you have entered your details, make sure to click on the "Use Community" link to be able to use the free community version of databricks(see creen shot).
 
-<table><tr><td><img src='/images/dbricks0.png' alt=“” height="200"></td></tr></table>
+<table><tr><td><img src='/images/dbricks0.png' alt=“” height="300" width="700"></td></tr></table>
 
 * Download and install the [mgeneratejs](https://www.npmjs.com/package/mgeneratejs) JSON generator tool on your laptop
   ```bash
