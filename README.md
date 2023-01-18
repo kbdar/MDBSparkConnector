@@ -28,7 +28,7 @@ For the test 500 fictitious documents representing the data about customers who 
 __1. Configure Atlas Environment__
 * Log-on to your [Atlas account](http://cloud.mongodb.com) (using the MongoDB SA preallocated Atlas credits system) and navigate to your SA project
 * In the project's Security tab, choose to add a new user, e.g. __main_user__, and for __User Privileges__ specify __Read and write to any database__ (make a note of the password you specify)
-* In the Security tab, add a new __IP Whitelist__ for your laptop's current IP address
+* In the Security tab, add a new __IP Whitelist__ and allow access from everywhere.
 * Create an __M10__ based 3 node replica-set in a single cloud provider region of your choice with default settings
 * In the Atlas console, for the database cluster you deployed, click the __Connect button__, select __Connect Your Application__, and for the __latest Node.js version__ copy the __Connection String Only__ - make a note of this MongoDB URL address to be used in the next step
 
@@ -39,8 +39,8 @@ __2. Create and Configure Spark cluster on Databricks__
 
 <table><tr><td><img src='/images/dbricks0.png' alt=“” height="400"></td></tr></table>
 
-* Download and install the [mgeneratejs](https://www.npmjs.com/package/mgeneratejs) JSON generator tool on your laptop
+* Copy and paste the below code in your Jupyter notebook
   ```bash
-  npm install -g mgeneratejs
+ code here
   ```
 __3. Load Data Into A Collection In The Atlas Cluster__
