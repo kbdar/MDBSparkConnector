@@ -32,15 +32,26 @@ __1. Configure Atlas Environment__
 * Create an __M10__ based 3 node replica-set in a single cloud provider region of your choice with default settings
 * In the Atlas console, for the database cluster you deployed, click the __Connect button__, select __Connect Your Application__, and for the __latest Node.js version__ copy the __Connection String Only__ - make a note of this MongoDB URL address to be used in the next step
 
-__2. Create and Configure Spark cluster on Databricks__
+__2. Create a cluster on Databricks__
 * Goto https://community.cloud.databricks.com
 * At the login screen click on Sign Up if you do not have a databricks communnity account yet
 * Once you are on the signup screen and you have entered your details, make sure to click on the "Use Community" link to be able to use the free community version of databricks(see creen shot).
 
 <table><tr><td><img src='/images/dbricks0.png' alt=“” height="400"></td></tr></table>
 * Once you have created the account, check for the email in your inbox to activate your account and login at https://community.cloud.databricks.com. Then goto compute section in the menu and create a new cluster.The cluster should take a few minutes to be ready.
-<table><tr><td><img src='/images/createcluster.png' alt=“” height="400"></td></tr></table>
 
+<table><tr><td><img src='/images/createcluster.png' alt=“” height="400" width="90%"></td></tr></table>
+
+* Once you have created the account, check for the email in your inbox to activate your account and login at https://community.cloud.databricks.com. Then goto compute section in the menu and create a new cluster. Use the default parameters and just chose a name for your cluster. The cluster should take a few minutes to be ready.
+
+__2. Install MongoDB connector for Spark on the databricks cluster__
+* Once the cluster is ready, go to the "Libraries" tab and click on "Install new" a pop-up will appear.
+* In the "Library Source" select "Maven" and then click on "Search Packages"
+* In the list of packages, search for mongodb.
+* Select The official MongoDb spark connector and make sure the publishing organization in MongoDB.Click select to install the package.
+<table><tr><td><img src='/images/createcluster.png' alt=“” height="400" width="90%"></td></tr></table>
+
+You are now ready to connect your databricks spark to your MongoDB Atlas database cluster.
 
 
 
